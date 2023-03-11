@@ -7,6 +7,7 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import avatarImage from '@/images/avatar.jpg'
+import avatarLargeImage from '@/images/avatarLarge.webp'
 
 function CloseIcon(props) {
   return (
