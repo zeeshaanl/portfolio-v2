@@ -267,7 +267,7 @@ export default function Home({ articles }) {
             👋 Hi, I'm Zeeshaan.
           </h1>
           <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
-            Freelancer web developer 🌐, building lovable SaaS projects 🚀.
+            Freelancer web developer 🌐, building useful products 🛠️🚀.
             Based in Düsseldorf, Germany 🇩🇪.
           </p>
           <div className="mt-6 flex gap-6">

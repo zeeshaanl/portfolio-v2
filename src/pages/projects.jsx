@@ -69,8 +69,8 @@ export default function Projects() {
         />
       </Head>
       <SimpleLayout
-        title="Things I’ve made."
-        intro="Here are some of the projects that I’m most proud of. My goal is to make products that people love."
+        title="My goal is to make products that people love."
+        intro="Here are some of the projects I'm most proud of."
       >
         <ul
           role="list"

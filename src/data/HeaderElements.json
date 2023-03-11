@@ -14,5 +14,9 @@
     {
         "name": "Projects",
         "link": "/projects"
+    },
+    {
+        "name": "Freelance",
+        "link": "/freelance"
     }
 ]
