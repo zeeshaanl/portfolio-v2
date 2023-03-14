@@ -4,7 +4,7 @@ import { ToolsSection } from '@/components/ToolsSection'
 import Link from "next/link"
 import { Prose } from "@/components/Prose"
 
-export default function ExtraCurriculars() {
+export default function ImprovTheater() {
   return (
     <>
       <Head>
@@ -16,15 +16,15 @@ export default function ExtraCurriculars() {
       </Head>
       <SimpleLayout
         title="Improv teacher and instructor."
-        intro="I teach Improv theater at workshops every 2 weeks, and perform at a show every month."
+        intro="I teach Improv theater 👨‍🏫 at regular workshops, and perform at a show 🎭 every month."
       >
         <div className="space-y-20">
-          <ToolsSection title="Improv Workshops">
+          <ToolsSection title="Improv Workshops 👨‍🏫">
             <ToolsSection.Tool title="Park Kultur, Düsseldorf">
               <Prose>I host a drop-in session every 2 weeks in Düsseldorf. Join us through our <Link target="_blank" href="https://www.meetup.com/de-DE/english-improv-in-dusseldorf/">meetup group</Link></Prose>
             </ToolsSection.Tool>
           </ToolsSection>
-          <ToolsSection title="Improv Show">
+          <ToolsSection title="Improv Show 🎭">
             <ToolsSection.Tool title="Kulturbanausen, Düsseldorf">
             <Prose>Perform a monthly show with Impromix, playing short form and the Harold.< br />
               Find the date of our next performance <Link target="_blank" href="hhttps://impromix.de/">here</Link></Prose>
