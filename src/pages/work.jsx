@@ -6,11 +6,16 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import { Card } from '@/components/Card'
 
 export default function Work() {
+  const introText = "Currently accepting freelance web development projects."
+  const subIntroText = "I've worked for 6+ years as a developer, I have a Bachelor's degree in Computer Science and an MBA, and I've worked as a project manager for digital products at a large pharma company"
   return (
-    <SimpleLayout>
+    <SimpleLayout
+        title="Work."
+        intro={introText}
+        subintro={subIntroText}
+        >
       <Prose>
-        <p>Currently accepting Freelance projects.</p>
-        {/* Partial to building applications of AI. */}
+        <div>My favoured Tech Stack:</div>
         <div className="flex flex-wrap justify-start gap-6">
           <Card className="w-[300px]">
             <h2 className="mt-0">Languages</h2>

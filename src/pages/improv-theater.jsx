@@ -27,7 +27,7 @@ export default function ImprovTheater() {
           <ToolsSection title="Improv Show 🎭">
             <ToolsSection.Tool title="Kulturbanausen, Düsseldorf">
             <Prose>Perform a monthly show with Impromix, playing short form and the Harold.< br />
-              Find the date of our next performance <Link target="_blank" href="hhttps://impromix.de/">here</Link></Prose>
+              Find the date of our next performance <Link target="_blank" href="https://impromix.de/">here</Link></Prose>
             </ToolsSection.Tool>
             <ToolsSection.Tool title="Previously at Bar Mathilda, Hamburg">
               2017-2019 Performed with Chicken Cake Improv
