@@ -4,19 +4,23 @@
         "link": "/"
     },
     {
-        "name": "Accomplishments",
-        "link": "/accomplishments"
+        "name": "Projects",
+        "link": "/projects"
+    },
+    {
+        "name": "Work",
+        "link": "/work"
+    },
+    {
+        "name": "Extra-curriculars",
+        "link": "/extra-curriculars"
     },
     {
         "name": "Uses",
         "link": "/uses"
     },
     {
-        "name": "Projects",
-        "link": "/projects"
-    },
-    {
-        "name": "Freelance",
-        "link": "/freelance"
+        "name": "Contact",
+        "link": "/contact"
     }
 ]

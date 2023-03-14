@@ -7,43 +7,33 @@ import logoAnimaginary from '@/images/logos/animaginary.svg'
 import logoCosmos from '@/images/logos/cosmos.svg'
 import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoMultiverse from '@/images/logos/multiverselogo.svg'
+import logoGameaway from '@/images/logos/gameawaylogo.svg'
+import logoFlashcard from '@/images/logos/flashcardlogo.svg'
 
 const projects = [
   {
-    name: 'Planetaria',
-    description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+    name: 'Gameaway',
+    description: 'Cloud gaming for AAA games with ultra-low latency.',
+    link: { href: 'https://www.gameaway.in', label: 'gameaway.in' },
+    logo: logoGameaway,
+    techStack: "React.js, AWS EC2, Lambda, DynamoDB, Cognito"
   },
   {
-    name: 'Animaginary',
+    name: 'TheMultiverseAI',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+      'Create AI-generated avatars from regular pictures of yourself using Stable Diffusion.',
+    link: { href: 'https://www.themultiverse.ai', label: 'themultiverse.ai' },
+    logo: logoMultiverse,
+    techStack: "Next.js, React.js, TailwindCSS, AWS Lambda, DynamoDB"
   },
   {
-    name: 'HelioStream',
+    name: 'TranslationToFlashcard',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+      'Android and iOS app to automatically create flashcards from words you translate.',
+    link: { href: 'https://www.themultiverse.ai', label: 'themultiverse.ai' },
+    logo: logoFlashcard,
+    techStack: "React-Native, Firebase, Google Cloud Functions"
   },
 ]
 
@@ -58,20 +48,20 @@ function LinkIcon(props) {
   )
 }
 
-export default function Projects() {
+export default function Projects({ extraDetails = true }) {
   return (
     <>
       <Head>
         <title>Projects - Zeeshaan Lakdawala</title>
-        <meta
-          name="description"
-          content="Things I’ve made."
-        />
+        <meta name="description" content="Things I've made." />
       </Head>
       <SimpleLayout
-        title="My goal is to make products that people love."
-        intro="Here are some of the projects I'm most proud of."
+        title="Projects."
+        // intro="My goal is to make products that people love ❤️."
       >
+        {extraDetails && <p className="mb-8">
+          Tech founder (+ wife) looking to build projects to financial independence
+        </p>}
         <ul
           role="list"
           className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
@@ -90,6 +80,15 @@ export default function Projects() {
                 <Card.Link href={project.link.href}>{project.name}</Card.Link>
               </h2>
               <Card.Description>{project.description}</Card.Description>
+
+              {extraDetails && (
+                <div className="mt-4">
+                  <Card.Description>
+                    <h3>Tech Stack:</h3>
+                    {project.techStack}
+                  </Card.Description>
+                </div>
+              )}
               <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
                 <LinkIcon className="h-6 w-6 flex-none" />
                 <span className="ml-2">{project.link.label}</span>
