@@ -24,8 +24,8 @@ import image5 from '@/images/photos/image-5.jpg'
 import { formatDate } from '@/lib/formatDate'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
-import { TwitterBlock } from "@/components/TwitterBlock"
-import Projects from "./projects"
+import { TwitterBlock } from '@/components/TwitterBlock'
+import Projects from './projects'
 
 function MailIcon(props) {
   return (
@@ -258,7 +258,7 @@ export default function Home({ articles }) {
         </title>
         <meta
           name="description"
-          content="I&apos;m Zeeshaan, a full stack developer and entrepreneur based in Düsseldorf."
+          content="I'm Zeeshaan, a full stack developer and entrepreneur based in Düsseldorf."
         />
       </Head>
       <Container className="mt-9">
@@ -267,7 +267,10 @@ export default function Home({ articles }) {
             👋 Hi, I&apos;m Zeeshaan.
           </h1>
           <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
-            Freelancer web developer 🌐, building useful tech products 🛠️, aiming for happy customers 😊 and financial independence 🚀.
+            Freelancer web developer 🌐, building useful tech products 🛠️,
+            aiming for happy customers 😊 and financial independence 🚀.
+          </p>
+          <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
             Based in Düsseldorf, Germany 🇩🇪.
           </p>
           <div className="mt-6 flex gap-6">
@@ -294,7 +297,7 @@ export default function Home({ articles }) {
           </div>
         </div>
       </Container>
-        <Projects extraDetails={false}/>
+      <Projects extraDetails={false} />
       <Photos />
       {/* <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">

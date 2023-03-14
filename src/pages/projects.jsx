@@ -10,6 +10,9 @@ import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoMultiverse from '@/images/logos/multiverselogo.svg'
 import logoGameaway from '@/images/logos/gameawaylogo.svg'
 import logoFlashcard from '@/images/logos/flashcardlogo.svg'
+import { Prose } from '@/components/Prose'
+import { Section } from '@/components/Section'
+
 
 const projects = [
   {
@@ -17,7 +20,7 @@ const projects = [
     description: 'Cloud gaming for AAA games with ultra-low latency.',
     link: { href: 'https://www.gameaway.in', label: 'gameaway.in' },
     logo: logoGameaway,
-    techStack: "React.js, AWS EC2, Lambda, DynamoDB, Cognito"
+    techStack: 'React.js, AWS EC2, Lambda, DynamoDB, Cognito',
   },
   {
     name: 'TheMultiverseAI',
@@ -25,7 +28,7 @@ const projects = [
       'Create AI-generated avatars from regular pictures of yourself using Stable Diffusion.',
     link: { href: 'https://www.themultiverse.ai', label: 'themultiverse.ai' },
     logo: logoMultiverse,
-    techStack: "Next.js, React.js, TailwindCSS, AWS Lambda, DynamoDB"
+    techStack: 'Next.js, React.js, TailwindCSS, AWS Lambda, DynamoDB',
   },
   {
     name: 'TranslationToFlashcard',
@@ -33,7 +36,7 @@ const projects = [
       'Android and iOS app to automatically create flashcards from words you translate.',
     link: { href: 'https://www.themultiverse.ai', label: 'themultiverse.ai' },
     logo: logoFlashcard,
-    techStack: "React-Native, Firebase, Google Cloud Functions"
+    techStack: 'React-Native, Firebase, Google Cloud Functions',
   },
 ]
 
@@ -59,12 +62,24 @@ export default function Projects({ extraDetails = true }) {
         title="Projects."
         // intro="My goal is to make products that people love ❤️."
       >
-        {extraDetails && <p className="mb-8">
-          Tech founder (+ wife) looking to build projects to financial independence
-        </p>}
+        {extraDetails && (
+          <div>
+            <Prose className="mb-8">
+              Looking to build great projects that people love, with my&nbsp;
+              <a target="_blank" href="https://www.anikakowalska.com">
+                wife
+              </a>{' '}
+              and friends.
+            </Prose>
+            <Prose>
+              Fascinated by the AI revolution and eager to build products using
+              GPT-4, Whisper, and Stable Diffusion, among others
+            </Prose>
+          </div>
+        )}
         <ul
           role="list"
-          className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
+          className="mt-8 grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
         >
           {projects.map((project) => (
             <Card as="li" key={project.name}>
@@ -96,6 +111,34 @@ export default function Projects({ extraDetails = true }) {
             </Card>
           ))}
         </ul>
+
+        {extraDetails && (
+          <Prose className="mt-8">
+            <h2>Other things I've done</h2>
+            <ul role="list" className="space-y-2">
+              <li className="mb-0">
+                Served as Vice-President of Membership of the Hamburg Power
+                Speakers, a <a target="_blank" href="https://www.toastmasters.org/">Toastmasters</a> club.
+              </li>
+              <li>
+                Volunteered in Russia for 2 months on an <a target="_blank" href="https://aiesec.org/">AIESEC</a> internship, organising events to help
+                locals learn English, where I met my <a target="_blank" href="https://www.anikakowalska.com">wife</a>
+              </li>
+              <li>
+                Volunteered at the <a target="_blank" href="https://www.tiff.net//">Toronto International Film Festival</a> 2016,
+                as a coordinator and an usher
+              </li>
+              <li>
+                Founded a company selling slim wallets with the brand "Thinmann" on
+                Amazon.de. Had them manufactured in China, shipped to Europe and fulfilled by Amazon
+              </li>
+              <li>
+                Created an e-commerce store, "The Laptop Bags", curating a
+                collection of laptop bags and drop-shipped to customers.
+              </li>
+            </ul>
+          </Prose>
+        )}
       </SimpleLayout>
     </>
   )
