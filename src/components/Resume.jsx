@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import {Button} from '@/components/Button'
-import logoAvatar from '@/images/avatarSvg.svg'
+import logoAvatar from '@/images/avatar.png'
 import logoJanssen from '@/images/logos/janssenCropped.png'
 import logoTl from '@/images/logos/tl.png'
 import logoKn from '@/images/logos/kn.png'
