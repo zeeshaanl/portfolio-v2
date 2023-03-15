@@ -10,6 +10,7 @@ import { Prose } from '@/components/Prose'
 import { Section } from '@/components/Section'
 import { Photos } from "@/components/Photos"
 import { Footer } from "@/components/Footer"
+import Link from "next/link"
 
 
 const projects = [
@@ -64,9 +65,9 @@ export default function Projects({ extraDetails = true }) {
           <div>
             <Prose className="mb-8">
               Looking to build great projects that people love, with my&nbsp;
-              <a target="_blank" href="https://www.anikakowalska.com">
+              <Link target="_blank" href="https://www.anikakowalska.com">
                 wife
-              </a>{' '}
+              </Link>{' '}
               and friends.
             </Prose>
             <Prose>
@@ -116,14 +117,14 @@ export default function Projects({ extraDetails = true }) {
             <ul role="list" className="space-y-2">
               <li className="mb-0">
                 Served as Vice-President of Membership of the Hamburg Power
-                Speakers, a <a target="_blank" href="https://www.toastmasters.org/">Toastmasters</a> club.
+                Speakers, a <Link target="_blank" href="https://www.toastmasters.org/">Toastmasters</Link> club.
               </li>
               <li>
-                Volunteered in Russia for 2 months on an <a target="_blank" href="https://aiesec.org/">AIESEC</a> internship, organising events to help
-                locals learn English, where I met my <a target="_blank" href="https://www.anikakowalska.com">wife</a>
+                Volunteered in Russia for 2 months on an <Link target="_blank" href="https://aiesec.org/">AIESEC</Link> internship, organising events to help
+                locals learn English, where I met my <Link target="_blank" href="https://www.anikakowalska.com">wife</Link>
               </li>
               <li>
-                Volunteered at the <a target="_blank" href="https://www.tiff.net//">Toronto International Film Festival</a> 2016,
+                Volunteered at the <Link target="_blank" href="https://www.tiff.net//">Toronto International Film Festival</Link> 2016,
                 as a coordinator and an usher
               </li>
               <li>
