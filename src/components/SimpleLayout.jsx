@@ -14,7 +14,7 @@ export function SimpleLayout({ title, intro, subintro, children }) {
           {subintro}
         </p>
       </header>
-      <div className="mt-16 sm:mt-20">{children}</div>
+      <div className="">{children}</div>
     </Container>
   )
 }

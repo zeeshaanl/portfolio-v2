@@ -14,7 +14,7 @@ export default function Work() {
   return (
     <>
     <SimpleLayout title="Work." intro={subIntroText}>
-      <Prose className="p-0 m-0">
+      <Prose className="mt-16 sm:mt-20 p-0 m-0">
         {/* <div>My Preferred Tech Stack:</div> */}
         <div className="flex flex-wrap justify-start gap-6">
           <Card className="w-[300px]">

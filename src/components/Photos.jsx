@@ -1,8 +1,8 @@
 import clsx from "clsx"
 import Image from "next/image"
-import image1 from '@/images/photos/tiff.jpeg'
+import image3 from '@/images/photos/tiff.jpeg'
 import image2 from '@/images/photos/work1.jpeg'
-import image3 from '@/images/photos/mba1.jpeg'
+import image1 from '@/images/photos/mba1.jpeg'
 import image4 from '@/images/photos/speaking.jpeg'
 import image5 from '@/images/photos/barmathilda.jpeg'
 // import image5 from '@/images/photos/russia1.jpeg'
@@ -12,7 +12,7 @@ export function Photos() {
   
     return (
       <div className="mt-16 sm:mt-20 z-50">
-        <div className="-my-4 flex justify-center gap-5 py-4 sm:gap-8">
+        <div className="-my-4 flex justify-center overflow-hidden md:overflow-visible gap-5 py-4 sm:gap-8">
           {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
             <div
               key={image.src}

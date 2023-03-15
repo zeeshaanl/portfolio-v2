@@ -14,7 +14,7 @@ export default function Contact() {
         title="Say Hi 🙋‍♂️"
         // intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff."
       >
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 mt-16 sm:mt-20">
           <Prose>
             Email me at {' '}
             <Link target="_blank" href="mailto:zeeshaanl@gmail.com ">

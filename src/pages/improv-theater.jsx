@@ -24,7 +24,7 @@ export default function ImprovTheater() {
         title="Improv teacher and instructor."
         intro="I teach Improv theater 👨‍🏫 at regular workshops, and perform at a show 🎭 every month."
       >
-        <div className="space-y-20">
+        <div className="mt-16 sm:mt-20 space-y-20">
           <ToolsSection title="Improv Workshops 👨‍🏫">
             <ToolsSection.Tool title="Park Kultur, Düsseldorf">
               <Prose>

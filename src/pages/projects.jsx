@@ -59,10 +59,11 @@ export default function Projects({ extraDetails = true }) {
       </Head>
       <SimpleLayout
         title="Projects."
-        // intro="My goal is to make products that people love ❤️."
+        intro=""
+        subintro=""
       >
         {extraDetails && (
-          <div>
+          <div className="mb-12">
             <Prose className="mb-8">
               Looking to build great projects that people love, with my&nbsp;
               <Link target="_blank" href="https://www.anikakowalska.com">
@@ -98,33 +99,33 @@ export default function Projects({ extraDetails = true }) {
               {extraDetails && (
                 <div className="mt-4">
                   <Card.Description>
-                    <h3>Tech Stack:</h3>
+                    <span>Tech Stack:</span>
                     {project.techStack}
                   </Card.Description>
                 </div>
               )}
-              <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
+              <div className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
                 <LinkIcon className="h-6 w-6 flex-none" />
                 <span className="ml-2">{project.link.label}</span>
-              </p>
+              </div>
             </Card>
           ))}
         </ul>
 
         {extraDetails && (
-          <Prose className="mt-8">
+          <Prose className="mt-20 lg:mt-24">
             <h2>Other things I&apos;ve done</h2>
             <ul role="list" className="space-y-2">
               <li className="mb-0">
                 Served as Vice-President of Membership of the Hamburg Power
-                Speakers, a <Link target="_blank" href="https://www.toastmasters.org/">Toastmasters</Link> club.
+                Speakers, a <Link target="_blank" href="https://www.toastmasters.org">Toastmasters</Link> club.
               </li>
               <li>
-                Volunteered in Russia for 2 months on an <Link target="_blank" href="https://aiesec.org/">AIESEC</Link> internship, organising events to help
+                Volunteered in Russia for 2 months on an <Link target="_blank" href="https://aiesec.org">AIESEC</Link> internship, organising events to help
                 locals learn English, where I met my <Link target="_blank" href="https://www.anikakowalska.com">wife</Link>
               </li>
               <li>
-                Volunteered at the <Link target="_blank" href="https://www.tiff.net//">Toronto International Film Festival</Link> 2016,
+                Volunteered at the <Link target="_blank" href="https://www.tiff.net">Toronto International Film Festival</Link> 2016,
                 as a coordinator and an usher
               </li>
               <li>
