@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import headerElements from '../data/headerElements'
 import { Container } from '@/components/Container'
+import clsx from "clsx"
 
 function NavLink({ href, children }) {
   return (
@@ -13,17 +14,17 @@ function NavLink({ href, children }) {
   )
 }
 
-export function Footer() {
+export function Footer({className}) {
   return (
-    <footer className="mt-32">
+    <footer className={clsx(className, "mt-32")}>
       <Container.Outer>
-        <div className="border-t border-zinc-100 pt-10 pb-16 dark:border-zinc-700/40">
+        <div className="border-t border-zinc-100 pt-10 pb-10 dark:border-zinc-700/40">
           <Container.Inner>
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
               <div className="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
                 {
                   headerElements.map((element) => (
-                    <NavLink href={element.link}>{element.name}</NavLink>
+                    <NavLink key={element.name} href={element.link}>{element.name}</NavLink>
                   ))
                 }
               </div>

@@ -8,6 +8,7 @@ import workshop1 from '@/images/photos/workshop1.jpeg'
 import workshop2 from '@/images/photos/workshop2.jpeg'
 import show1 from '@/images/photos/show1.jpeg'
 import show2 from '@/images/photos/show2.jpeg'
+import { Footer } from "@/components/Footer"
 
 export default function ImprovTheater() {
   return (

@@ -9,6 +9,7 @@ import logoFlashcard from '@/images/logos/flashcardlogo.svg'
 import { Prose } from '@/components/Prose'
 import { Section } from '@/components/Section'
 import { Photos } from "@/components/Photos"
+import { Footer } from "@/components/Footer"
 
 
 const projects = [
@@ -53,7 +54,7 @@ export default function Projects({ extraDetails = true }) {
     <>
       <Head>
         <title>Projects - Zeeshaan Lakdawala</title>
-        <meta name="description" content="Things I've made." />
+        <meta name="description" content="Things I&apos;ve made." />
       </Head>
       <SimpleLayout
         title="Projects."
@@ -111,7 +112,7 @@ export default function Projects({ extraDetails = true }) {
 
         {extraDetails && (
           <Prose className="mt-8">
-            <h2>Other things I've done</h2>
+            <h2>Other things I&apos;ve done</h2>
             <ul role="list" className="space-y-2">
               <li className="mb-0">
                 Served as Vice-President of Membership of the Hamburg Power
@@ -126,11 +127,11 @@ export default function Projects({ extraDetails = true }) {
                 as a coordinator and an usher
               </li>
               <li>
-                Founded a company selling slim wallets with the brand "Thinmann" on
+                Founded a company selling slim wallets with the brand &quot;Thinmann&quot; on
                 Amazon.de. Had them manufactured in China, shipped to Europe and fulfilled by Amazon
               </li>
               <li>
-                Created an e-commerce store, "The Laptop Bags", curating a
+                Created an e-commerce store, &quot;The Laptop Bags&quot;, curating a
                 collection of laptop bags and drop-shipped to customers.
               </li>
             </ul>

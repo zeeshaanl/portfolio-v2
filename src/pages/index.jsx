@@ -142,7 +142,7 @@ export default function Home({ articles }) {
         </title>
         <meta
           name="description"
-          content="I'm Zeeshaan, a full stack developer and entrepreneur based in Düsseldorf."
+          content="I&apos;m Zeeshaan, a full stack developer and entrepreneur based in Düsseldorf."
         />
       </Head>
       <Container className="mt-9">
@@ -186,14 +186,13 @@ export default function Home({ articles }) {
 
         <Prose>
           <div className="mt-16 text-lg text-zinc-600 dark:text-zinc-400 flex flex-col gap-4">
-            <div>Open to Freelance web development projects, see my <Link href="/work">work skills.</Link> </div>
+            <div>Open to freelance web development projects, see my <Link href="/work">work skills.</Link> </div>
             <div>Check out my <Link href="/projects">micro-startups.</Link></div>
             <div>I play and teach <Link href="/improv-theater">improvisation theater.</Link></div>
             <div>Based in Düsseldorf, Germany 🇩🇪.</div>
             </div>
           </Prose>
       </Container>
-
       {/* <Projects extraDetails={false} /> */}
       {/* <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">

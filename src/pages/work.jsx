@@ -5,13 +5,15 @@ import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { Card } from '@/components/Card'
 import { Education } from '@/components/Education'
+import { Footer } from "@/components/Footer"
 
 export default function Work() {
   const introText = 'Currently accepting freelance web development projects.'
   const subIntroText =
-    "I've worked for 6+ years as a developer, I have a Bachelor's degree in Computer Science and an MBA, and I've worked as a project manager for digital products at a large pharma company"
+    "I&apos;ve worked for 6+ years as a front-end and full stack developer, I have a Bachelor's degree in Computer Science and an MBA, and I've worked as a project manager for digital products at a large pharma company"
   return (
-    <SimpleLayout title="Work." intro={introText} subintro={subIntroText}>
+    <>
+    <SimpleLayout title="Work." intro={subIntroText}>
       <Prose className="p-0 m-0">
         {/* <div>My Preferred Tech Stack:</div> */}
         <div className="flex flex-wrap justify-start gap-6">
@@ -50,5 +52,6 @@ export default function Work() {
         <Education className=""/>
       </div>
     </SimpleLayout>
+    </>
   )
 }

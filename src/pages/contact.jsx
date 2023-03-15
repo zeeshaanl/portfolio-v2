@@ -16,25 +16,25 @@ export default function Contact() {
       >
         <div className="flex flex-col gap-6">
           <Prose>
-            Email me at{' '}
+            Email me at {' '}
             <Link target="_blank" href="mailto:zeeshaanl@gmail.com ">
               zeeshaanl@gmail.com
             </Link>{' '}
             📮
           </Prose>
           <Prose>
-            Follow me on Twitter at{' '}
+            Follow me on {' '}
             <Link target="_blank" href="https://twitter.com/zeeshaanl">
-              twitter.com/zeeshaanl
+            Twitter
             </Link>
           </Prose>
           <Prose>
-            Stalk me on Linkedin at{' '}
+            Stalk me on {' '}
             <Link
               target="_blank"
-              href="https://www.linkedin.com/in/zeeshaanlakdawala/"
+              href="https://www.linkedin.com/in/zeeshaan-lakdawala-2b8b712b/"
             >
-              linkedin.com/in/zeeshaanlakdawala
+              Linkedin
             </Link>
           </Prose>
         </div>
