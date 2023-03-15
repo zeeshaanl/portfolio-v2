@@ -4,18 +4,16 @@ import { Resume } from '@/components/Resume'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { Card } from '@/components/Card'
+import { Education } from '@/components/Education'
 
 export default function Work() {
-  const introText = "Currently accepting freelance web development projects."
-  const subIntroText = "I've worked for 6+ years as a developer, I have a Bachelor's degree in Computer Science and an MBA, and I've worked as a project manager for digital products at a large pharma company"
+  const introText = 'Currently accepting freelance web development projects.'
+  const subIntroText =
+    "I've worked for 6+ years as a developer, I have a Bachelor's degree in Computer Science and an MBA, and I've worked as a project manager for digital products at a large pharma company"
   return (
-    <SimpleLayout
-        title="Work."
-        intro={introText}
-        subintro={subIntroText}
-        >
+    <SimpleLayout title="Work." intro={introText} subintro={subIntroText}>
       <Prose>
-        <div>My favoured Tech Stack:</div>
+        <div>My Preferred Tech Stack:</div>
         <div className="flex flex-wrap justify-start gap-6">
           <Card className="w-[300px]">
             <h2 className="mt-0">Languages</h2>
@@ -47,7 +45,10 @@ export default function Work() {
           </Card>
         </div>
       </Prose>
-      <Resume />
+      <div className="flex flex-col lg:flex-row lg:items-start gap-6">
+        <Resume />
+        <Education className=""/>
+      </div>
     </SimpleLayout>
   )
 }

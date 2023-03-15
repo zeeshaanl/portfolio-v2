@@ -34,7 +34,7 @@ const projects = [
     name: 'TranslationToFlashcard',
     description:
       'Android and iOS app to automatically create flashcards from words you translate.',
-    link: { href: 'https://www.themultiverse.ai', label: 'themultiverse.ai' },
+    link: { href: 'https://www.translationtoflashcard.com', label: 'translationtoflashcard.com' },
     logo: logoFlashcard,
     techStack: 'React-Native, Firebase, Google Cloud Functions',
   },
