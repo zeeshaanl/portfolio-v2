@@ -142,7 +142,7 @@ export default function Home({ articles }) {
         </title>
         <meta
           name="description"
-          content="I&apos;m Zeeshaan, a full stack developer and entrepreneur based in Düsseldorf."
+          content="I&apos;m Zeeshaan, a front-end and full-stack developer and entrepreneur, based in Düsseldorf."
         />
       </Head>
       <Container className="mt-9">
@@ -151,7 +151,7 @@ export default function Home({ articles }) {
             👋 Hi, I&apos;m Zeeshaan.
           </h1>
           <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
-            Freelancer web developer 🌐, building useful tech products 🛠️,
+            Freelance web developer 🌐, building useful tech products 🛠️,
             aiming for happy customers 😊 and financial independence 🚀.
           </p>
           {/* <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400">

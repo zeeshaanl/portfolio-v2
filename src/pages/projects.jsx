@@ -55,7 +55,7 @@ export default function Projects({ extraDetails = true }) {
     <>
       <Head>
         <title>Projects - Zeeshaan Lakdawala</title>
-        <meta name="description" content="Things I&apos;ve made." />
+        <meta name="description" content="My micro-startups and other achievements." />
       </Head>
       <SimpleLayout
         title="Projects."

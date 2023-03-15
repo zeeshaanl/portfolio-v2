@@ -48,7 +48,7 @@ function ArrowDownIcon(props) {
 export function Resume() {
   let resume = [
     {
-      company: 'Freelance Projects',
+      company: 'Self-employed',
       title: 'Full Stack Developer',
       logo: logoAvatar,
       start: '2023',

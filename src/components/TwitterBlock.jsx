@@ -2,7 +2,7 @@ export function TwitterBlock() {
   return (
     <a
       href="https://twitter.com/zeeshaanl"
-      className="inline-flex items-center space-x-2 rounded-md bg-[#1da1f2] bg-opacity-90 px-5 py-1.5 font-semibold text-white transition-all hover:bg-opacity-100"
+      className="inline-flex items-center space-x-2 rounded-md bg-[#1da1f2] bg-opacity-90 px-4 py-1.5 font-semibold text-white transition-all hover:bg-opacity-100"
       target="_blank"
       rel="noopener noreferrer"
     >

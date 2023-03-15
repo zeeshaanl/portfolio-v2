@@ -20,7 +20,7 @@ export default function Contact() {
             <Link target="_blank" href="mailto:zeeshaanl@gmail.com ">
               zeeshaanl@gmail.com
             </Link>{' '}
-            📮
+            ✉️
           </Prose>
           <Prose>
             Follow me on {' '}
