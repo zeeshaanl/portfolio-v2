@@ -1,4 +1,4 @@
-[
+export const headerElements = [
     {
         "name": "Home",
         "link": "/"

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import headerElements from '@/data/HeaderElements.json'
+import { headerElements } from '@/data/HeaderElements.js'
 import { Container } from '@/components/Container'
 import clsx from "clsx"
 
