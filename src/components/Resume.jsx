@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import {Button} from '@/components/Button'
-import logoMultiverse from '@/images/logos/multiverselogo.svg'
+import logoAvatar from '@/images/avatarSvg.svg'
 import logoJanssen from '@/images/logos/janssenCropped.png'
 import logoTl from '@/images/logos/tl.png'
 import logoKn from '@/images/logos/kn.png'
@@ -50,7 +50,7 @@ export function Resume() {
     {
       company: 'Freelance Projects',
       title: 'Full Stack Developer',
-      logo: logoMultiverse,
+      logo: logoAvatar,
       start: '2023',
       end: {
         label: 'Present',

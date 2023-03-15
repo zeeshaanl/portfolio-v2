@@ -3,15 +3,12 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoMultiverse from '@/images/logos/multiverselogo.svg'
 import logoGameaway from '@/images/logos/gameawaylogo.svg'
 import logoFlashcard from '@/images/logos/flashcardlogo.svg'
 import { Prose } from '@/components/Prose'
 import { Section } from '@/components/Section'
+import { Photos } from "@/components/Photos"
 
 
 const projects = [
@@ -139,6 +136,8 @@ export default function Projects({ extraDetails = true }) {
             </ul>
           </Prose>
         )}
+
+        {extraDetails && <Photos />}
       </SimpleLayout>
     </>
   )

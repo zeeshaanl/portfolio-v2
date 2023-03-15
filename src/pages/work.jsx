@@ -12,8 +12,8 @@ export default function Work() {
     "I've worked for 6+ years as a developer, I have a Bachelor's degree in Computer Science and an MBA, and I've worked as a project manager for digital products at a large pharma company"
   return (
     <SimpleLayout title="Work." intro={introText} subintro={subIntroText}>
-      <Prose>
-        <div>My Preferred Tech Stack:</div>
+      <Prose className="p-0 m-0">
+        {/* <div>My Preferred Tech Stack:</div> */}
         <div className="flex flex-wrap justify-start gap-6">
           <Card className="w-[300px]">
             <h2 className="mt-0">Languages</h2>

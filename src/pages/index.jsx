@@ -12,16 +12,14 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from '@/components/SocialIcons'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
+
 import { formatDate } from '@/lib/formatDate'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { TwitterBlock } from '@/components/TwitterBlock'
 import Projects from './projects'
+import { Photos } from '@/components/Photos'
+import { Prose } from '@/components/Prose'
 
 function MailIcon(props) {
   return (
@@ -134,34 +132,6 @@ function Newsletter() {
   )
 }
 
-
-function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
-
-  return (
-    <div className="mt-16 sm:mt-20">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
-          <div
-            key={image.src}
-            className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
-              rotations[imageIndex % rotations.length]
-            )}
-          >
-            <Image
-              src={image}
-              alt=""
-              sizes="(min-width: 640px) 18rem, 11rem"
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-          </div>
-        ))}
-      </div>
-    </div>
-  )
-}
-
 export default function Home({ articles }) {
   return (
     <>
@@ -184,20 +154,23 @@ export default function Home({ articles }) {
             Freelancer web developer 🌐, building useful tech products 🛠️,
             aiming for happy customers 😊 and financial independence 🚀.
           </p>
-          <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
+          {/* <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
             Based in Düsseldorf, Germany 🇩🇪.
-          </p>
+          </p> */}
+          
+
           <div className="mt-6 flex gap-6">
-            <SocialLink
+            <TwitterBlock />
+            {/* <SocialLink
               href="https://twitter.com/zeeshaanl"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
-            />
+            /> */}
             {/* <SocialLink
               href="https://instagram.com"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
-            /> */}
+            />
             <SocialLink
               href="https://github.com/zeeshaanl"
               aria-label="Follow on GitHub"
@@ -207,12 +180,21 @@ export default function Home({ articles }) {
               href="https://www.linkedin.com/in/zeeshaan-lakdawala-2b8b712b/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
-            />
+            /> */}
           </div>
         </div>
+
+        <Prose>
+          <div className="mt-16 text-lg text-zinc-600 dark:text-zinc-400 flex flex-col gap-4">
+            <div>Open to Freelance web development projects, see my <Link href="/work">work skills.</Link> </div>
+            <div>Check out my <Link href="/projects">micro-startups.</Link></div>
+            <div>I play and teach <Link href="/improv-theater">improvisation theater.</Link></div>
+            <div>Based in Düsseldorf, Germany 🇩🇪.</div>
+            </div>
+          </Prose>
       </Container>
-      <Projects extraDetails={false} />
-      <Photos />
+
+      {/* <Projects extraDetails={false} /> */}
       {/* <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
