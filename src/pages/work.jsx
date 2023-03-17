@@ -10,7 +10,7 @@ import { Footer } from "@/components/Footer"
 export default function Work() {
   const introText = 'Currently accepting freelance web development projects.'
   const subIntroText =
-    "I've worked for 6+ years as a front-end and full stack developer, I have a Bachelor's degree in Computer Science and an MBA, and I've worked as a project manager for digital products at a large pharma company"
+    "I've worked for 7+ years as a front-end and full stack developer, I have a Bachelor's degree in Computer Science and an MBA, and I've worked as a project manager for digital products at a large pharma company"
   return (
     <>
     <SimpleLayout title="Work." intro={subIntroText}>
