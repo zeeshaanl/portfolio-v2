@@ -160,22 +160,23 @@ export default function Home({ articles }) {
           
 
           <div className="mt-6 flex gap-6">
-            <TwitterBlock />
-            {/* <SocialLink
+            {/* <TwitterBlock /> */}
+            <SocialLink
               href="https://twitter.com/zeeshaanl"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
-            /> */}
-            {/* <SocialLink
-              href="https://instagram.com"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
             />
             <SocialLink
               href="https://github.com/zeeshaanl"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
+            {/* <SocialLink
+              href="https://instagram.com"
+              aria-label="Follow on Instagram"
+              icon={InstagramIcon}
+            />
+            
             <SocialLink
               href="https://www.linkedin.com/in/zeeshaan-lakdawala-2b8b712b/"
               aria-label="Follow on LinkedIn"
