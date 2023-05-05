@@ -8,6 +8,7 @@ import logoEcoWorld from '@/images/logos/ecoworld.png'
 import logoHappycar from '@/images/logos/happycar.png'
 import logoArgo from '@/images/logos/argo.png'
 import logoBookmyshow from '@/images/logos/bookmyshow.png'
+import logoMultiverse from '@/images/logos/multiverselogo.svg'
 
 function BriefcaseIcon(props) {
   return (
@@ -47,15 +48,25 @@ function ArrowDownIcon(props) {
 
 export function Resume() {
   let resume = [
+    // {
+    //   company: 'Self-employed',
+    //   title: 'Full Stack Developer',
+    //   logo: logoAvatar,
+    //   start: '2023',
+    //   end: {
+    //     label: 'Present',
+    //     dateTime: new Date().getFullYear(),
+    //   },
+    // },
     {
-      company: 'Self-employed',
-      title: 'Full Stack Developer',
-      logo: logoAvatar,
+      company: 'TheMultiverse.AI',
+      title: 'Co-founder / Tech Lead',
+      logo: logoMultiverse,
       start: '2023',
       end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear(),
-      },
+            label: 'Present',
+            dateTime: new Date().getFullYear(),
+          },
     },
     {
       company: 'The Janssen Pharmaceutical Companies of Johnson & Johnson',

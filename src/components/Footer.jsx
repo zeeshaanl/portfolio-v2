@@ -16,7 +16,7 @@ function NavLink({ href, children }) {
 
 export function Footer({className}) {
   return (
-    <footer className={clsx(className, "mt-32")}>
+    <footer className={clsx(className, "mt-24 sm:mt-30")}>
       <Container.Outer>
         <div className="border-t border-zinc-100 pt-10 pb-10 dark:border-zinc-700/40">
           <Container.Inner>

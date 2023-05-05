@@ -15,19 +15,19 @@ import Link from "next/link"
 
 const projects = [
   {
+    name: 'TheMultiverseAI',
+    description:
+        'Create AI-generated avatars from regular pictures of yourself using Stable Diffusion.',
+    link: { href: 'https://www.themultiverse.ai', label: 'themultiverse.ai' },
+    logo: logoMultiverse,
+    techStack: 'Next.js, React.js, TailwindCSS, AWS Lambda, DynamoDB',
+  },
+  {
     name: 'Gameaway',
     description: 'Cloud gaming for AAA games with ultra-low latency.',
     link: { href: 'https://www.gameaway.in', label: 'gameaway.in' },
     logo: logoGameaway,
     techStack: 'React.js, AWS EC2, Lambda, DynamoDB, Cognito',
-  },
-  {
-    name: 'TheMultiverseAI',
-    description:
-      'Create AI-generated avatars from regular pictures of yourself using Stable Diffusion.',
-    link: { href: 'https://www.themultiverse.ai', label: 'themultiverse.ai' },
-    logo: logoMultiverse,
-    techStack: 'Next.js, React.js, TailwindCSS, AWS Lambda, DynamoDB',
   },
   {
     name: 'TranslationToFlashcard',
