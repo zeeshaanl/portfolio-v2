@@ -66,7 +66,7 @@ export default function Projects({ extraDetails = true }) {
           <div className="mb-12">
             <Prose className="mb-8">
               Looking to build great projects that people love, with my&nbsp;
-              <Link target="_blank" href="https://www.anikakowalska.com">
+              <Link target="_blank" href="https://www.anikalakdawala.com">
                 wife
               </Link>{' '}
               and friends.
