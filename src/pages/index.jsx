@@ -193,7 +193,7 @@ export default function Home({articles}) {
                     <div className="mt-14 text-lg text-zinc-600 dark:text-zinc-400 flex flex-col gap-4">
                         <div>Open to freelance web development projects, see my <Link href="/work">work skills.</Link>
                         </div>
-                        <div>Check out my <Link href="/projects">micro-startups.</Link></div>
+                        <div>Check out my <Link href="/projects">projects.</Link></div>
                         <div>I play and teach <Link href="/improv-theater">improvisation theater.</Link></div>
                         <div>Based in Düsseldorf, Germany 🇩🇪.</div>
                     </div>
