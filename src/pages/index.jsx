@@ -143,7 +143,7 @@ export default function Home({articles}) {
                 </title>
                 <meta
                     name="description"
-                    content="I&apos;m Zeeshaan, a front-end and full-stack developer and entrepreneur, based in Düsseldorf."
+                    content="I&apos;m Zeeshaan, a front-end and full-stack developer and entrepreneur, based in Barcelona."
                 />
             </Head>
             <Container className="mt-9">
@@ -154,7 +154,7 @@ export default function Home({articles}) {
                             👋 Hi, I&apos;m Zeeshaan.
                         </h1>
                         <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
-                            Freelance web developer 🌐, building useful tech products 🛠️,
+                            Web developer 🌐, building useful tech products 🛠️,
                             aiming for happy customers 😊 and financial independence 🚀.
                         </p>
                         {/* <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
@@ -195,7 +195,7 @@ export default function Home({articles}) {
                         </div>
                         <div>Check out my <Link href="/projects">projects.</Link></div>
                         <div>I play and teach <Link href="/improv-theater">improvisation theater.</Link></div>
-                        <div>Based in Düsseldorf, Germany 🇩🇪.</div>
+                        <div>Currently living in Barcelona, Spain 🇪🇸</div>
                     </div>
                 </Prose>
             </Container>
