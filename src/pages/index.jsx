@@ -16,10 +16,10 @@ import {
 import {formatDate} from '@/lib/formatDate'
 import {generateRssFeed} from '@/lib/generateRssFeed'
 import {getAllArticles} from '@/lib/getAllArticles'
-import {TwitterBlock} from '@/components/TwitterBlock'
 import Projects from './projects'
 import {Photos} from '@/components/Photos'
 import {Prose} from '@/components/Prose'
+import logoInfluencerAI from '/public/TheInfluencerAILogo.png'
 
 function MailIcon(props) {
     return (
@@ -154,50 +154,43 @@ export default function Home({articles}) {
                             👋 Hi, I&apos;m Zeeshaan.
                         </h1>
                         <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
-                            Web developer 🌐, building useful tech products 🛠️,
+                            Web developer 🌐, crafting useful tech products 🛠️,
                             aiming for happy customers 😊 and financial independence 🚀.
                         </p>
-                        {/* <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
-            Based in Düsseldorf, Germany 🇩🇪.
-          </p> */}
-
-
-                        <div className="mt-6 flex gap-6">
-                            {/* <TwitterBlock /> */}
-                            <SocialLink
-                                href="https://twitter.com/zeeshaanl"
-                                aria-label="Follow on Twitter"
-                                icon={TwitterIcon}
-                            />
-                            <SocialLink
-                                href="https://github.com/zeeshaanl"
-                                aria-label="Follow on GitHub"
-                                icon={GitHubIcon}
-                            />
-                            {/* <SocialLink
-                  href="https://instagram.com"
-                  aria-label="Follow on Instagram"
-                  icon={InstagramIcon}
-                />
-
-                <SocialLink
-                  href="https://www.linkedin.com/in/zeeshaan-lakdawala-2b8b712b/"
-                  aria-label="Follow on LinkedIn"
-                  icon={LinkedInIcon}
-                /> */}
-                        </div>
                     </div>
                 </div>
 
                 <Prose>
-                    <div className="mt-14 text-lg text-zinc-600 dark:text-zinc-400 flex flex-col gap-4">
-                        <div>Open to freelance web development projects, see my <Link href="/work">work skills.</Link>
+                    <div className="mt-4 text-lg text-zinc-600 dark:text-zinc-400 flex flex-col gap-4">
+                        {/* <div>Open to freelance web development projects, see my <Link href="/work">work skills.</Link></div> */}
+                        {/* <div>Check out my <Link href="/projects">projects.</Link></div> */}
+                        <div>
+                            Currently building the world's best {` `}
+                            <Link href="https://www.theinfluencer.ai/">AI Influencer Generator</Link> at {` `}
+                            <div className='inline-flex items-center gap-2'>
+                                The Influencer AI <Image src={logoInfluencerAI} alt="The Influencer AI - AI influencer generator platform logo" width={20} height={20} />
+                            </div>
                         </div>
-                        <div>Check out my <Link href="/projects">projects.</Link></div>
-                        <div>I play and teach <Link href="/improv-theater">improvisation theater.</Link></div>
-                        <div>Currently living in Barcelona, Spain 🇪🇸</div>
+                        <div>Living in Barcelona, Spain 🇪🇸</div>
                     </div>
                 </Prose>
+                <div className="mt-6 flex gap-6">
+                    <SocialLink
+                        href="https://twitter.com/zeeshaanl"
+                        aria-label="Follow on Twitter"
+                        icon={TwitterIcon}
+                    />
+                    <SocialLink
+                        href="https://github.com/zeeshaanl"
+                        aria-label="Follow on GitHub"
+                        icon={GitHubIcon}
+                    />
+                    <SocialLink
+                        href="https://www.linkedin.com/in/zeeshaan-lakdawala-2b8b712b/"
+                        aria-label="Follow on LinkedIn"
+                        icon={LinkedInIcon}
+                    />
+                </div>
             </Container>
             {/* <Projects extraDetails={false} /> */}
             {/* <Container className="mt-24 md:mt-28">

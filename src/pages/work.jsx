@@ -20,7 +20,7 @@ export default function Work() {
           <Card className="w-[300px]">
             <h2 className="mt-0">Languages</h2>
             <Card.Description>
-              Javascript, Typescript, HTML, CSS
+              Typescript, Javascript, HTML, CSS
             </Card.Description>
           </Card>
           <Card className="w-[300px]">
@@ -31,7 +31,7 @@ export default function Work() {
           </Card>
           <Card className="w-[300px]">
             <h2 className="mt-0">Back-end technologies</h2>
-            <Card.Description>Node.js, Express.js, Next.js</Card.Description>
+            <Card.Description>Node.js, Express.js, Next.js, Supabase</Card.Description>
           </Card>
           <Card className="w-[300px]">
             <h2 className="mt-0">AWS</h2>

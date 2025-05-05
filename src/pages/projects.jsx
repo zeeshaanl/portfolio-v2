@@ -11,31 +11,24 @@ import { Section } from '@/components/Section'
 import { Photos } from "@/components/Photos"
 import { Footer } from "@/components/Footer"
 import Link from "next/link"
-
+import logoInfluencerAI from '/public/TheInfluencerAILogo.png'
 
 const projects = [
   {
-    name: 'TheMultiverseAI',
+    name: 'The Influencer AI',
     description:
-        'Create AI-generated avatars from regular pictures of yourself using Stable Diffusion.',
+        'Create photo and video content in minutes with the world\'s best AI influencer platform.',
+    link: { href: 'https://www.theinfluencer.ai', label: 'theinfluencer.ai' },
+    logo: logoInfluencerAI,
+    techStack: 'Next.js, TailwindCSS, Supabase, PostgreSQL, Vercel',
+  },
+  {
+    name: 'The Multiverse AI',
+    description:
+        'Turn your selfies into professional headshots with our premier AI headshot generator.',
     link: { href: 'https://www.themultiverse.ai', label: 'themultiverse.ai' },
     logo: logoMultiverse,
-    techStack: 'Next.js, React.js, TailwindCSS, AWS Lambda, DynamoDB',
-  },
-  {
-    name: 'Gameaway',
-    description: 'Cloud gaming for AAA games with ultra-low latency.',
-    link: { href: 'https://www.gameaway.in', label: 'gameaway.in' },
-    logo: logoGameaway,
-    techStack: 'React.js, AWS EC2, Lambda, DynamoDB, Cognito',
-  },
-  {
-    name: 'TranslationToFlashcard',
-    description:
-      'Android and iOS app to automatically create flashcards from words you translate.',
-    link: { href: 'https://www.translationtoflashcard.com', label: 'translationtoflashcard.com' },
-    logo: logoFlashcard,
-    techStack: 'React-Native, Firebase, Google Cloud Functions',
+    techStack: 'Next.js, TailwindCSS, AWS Lambda, DynamoDB',
   },
 ]
 
@@ -65,15 +58,7 @@ export default function Projects({ extraDetails = true }) {
         {extraDetails && (
           <div className="mb-12">
             <Prose className="mb-8">
-              Looking to build great projects that people love, with my&nbsp;
-              <Link target="_blank" href="https://www.anikalakdawala.com">
-                wife
-              </Link>{' '}
-              and friends.
-            </Prose>
-            <Prose>
-              Fascinated by the AI revolution and eager to build products using
-              GPT-4, Whisper, and Stable Diffusion, among others
+              Looking to build great projects that people love, with my wife and friends.
             </Prose>
           </div>
         )}
@@ -87,7 +72,7 @@ export default function Projects({ extraDetails = true }) {
                 <Image
                   src={project.logo}
                   alt=""
-                  className="h-8 w-8"
+                  className="h-8 w-8 rounded-full"
                   unoptimized
                 />
               </div>
@@ -99,7 +84,7 @@ export default function Projects({ extraDetails = true }) {
               {extraDetails && (
                 <div className="mt-4">
                   <Card.Description>
-                    <span>Tech Stack:</span>
+                    <span>Tech Stack: </span>
                     {project.techStack}
                   </Card.Description>
                 </div>

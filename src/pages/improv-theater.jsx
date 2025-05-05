@@ -22,14 +22,13 @@ export default function ImprovTheater() {
       </Head>
       <SimpleLayout
         title="Improv teacher and instructor."
-        intro="I teach Improv theater 👨‍🏫 at regular workshops, and perform at a show 🎭 every month."
+        intro="I have taught Improv theater 👨‍🏫 at regular workshops, and performed at monthly shows 🎭"
       >
         <div className="mt-16 sm:mt-20 space-y-20">
           <ToolsSection title="Improv Workshops 👨‍🏫">
             <ToolsSection.Tool title="Park Kultur, Düsseldorf">
               <Prose>
-                I host a drop-in session every 2 weeks in Düsseldorf. Join us
-                through our{' '}
+                I set up and hosted a biweekly drop-in session while I lived in Düsseldorf. It lives on with new leaders in our {' '}
                 <Link
                   target="_blank"
                   href="https://www.meetup.com/de-DE/english-improv-in-dusseldorf/"
@@ -44,13 +43,8 @@ export default function ImprovTheater() {
           <ToolsSection title="Improv Show 🎭">
             <ToolsSection.Tool title="Kulturbanausen, Düsseldorf">
               <Prose>
-                Perform a monthly show with Impromix, playing short form and the
+                Performed a monthly show with Impromix, playing short form and the
                 Harold.
-                <br />
-                Find the date of our next performance{' '}
-                <Link target="_blank" href="https://impromix.de/">
-                  here
-                </Link>
                 <Image src={show1} alt="improv show photo" />
                 <Image src={show2} alt="improv show photo two" />
               </Prose>

@@ -24,8 +24,8 @@ export default function Contact() {
           </Prose>
           <Prose>
             Follow me on {' '}
-            <Link target="_blank" href="https://twitter.com/zeeshaanl">
-            Twitter
+            <Link target="_blank" href="https://x.com/zeeshaanl">
+              X/Twitter
             </Link>
           </Prose>
           <Prose>
