@@ -165,7 +165,7 @@ export default function Home({articles}) {
                         {/* <div>Open to freelance web development projects, see my <Link href="/work">work skills.</Link></div> */}
                         {/* <div>Check out my <Link href="/projects">projects.</Link></div> */}
                         <div>
-                            Currently building the world's best {` `}
+                            Currently building the world&apos;s best {` `}
                             <Link href="https://www.theinfluencer.ai/">AI Influencer Generator</Link> at {` `}
                             <div className='inline-flex items-center gap-2'>
                                 The Influencer AI <Image src={logoInfluencerAI} alt="The Influencer AI - AI influencer generator platform logo" width={20} height={20} />
